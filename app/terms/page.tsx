@@ -68,7 +68,7 @@ export default function TermsPage() {
             <h2 className="text-2xl font-semibold mb-3">5. Third-Party Integrations</h2>
             <p className="text-gray-300">
               Our Services integrate with Spotify, Last.fm, Genius, and others. Your use of those features is subject to the
-              third-party provider's terms and privacy policies. We are not responsible for third-party services.
+              third-party provider&apos;s terms and privacy policies. We are not responsible for third-party services.
             </p>
           </section>
 
