@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Navigation from "@/components/Navigation";
 import StatsSection from "@/components/StatsSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export default function Home() {
   return (
@@ -45,25 +47,29 @@ export default function Home() {
 
       {/* Features Section */}
       <section id="features" className="container mx-auto px-6 py-20">
-        <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-16">
-          Everything You Need
-        </h2>
+        <ScrollReveal>
+          <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-16">
+            Everything You Need
+          </h2>
+        </ScrollReveal>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
-            <div 
-              key={index}
-              className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition"
-            >
-              <div className="text-4xl mb-4">{feature.icon}</div>
-              <h3 className="text-xl font-bold text-white mb-2">{feature.title}</h3>
-              <p className="text-gray-300">{feature.description}</p>
-            </div>
+            <ScrollReveal key={index} delay={index * 50}>
+              <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover:border-primary/50 transition">
+                <div className="text-4xl mb-4">{feature.icon}</div>
+                <h3 className="text-xl font-bold text-white mb-2">{feature.title}</h3>
+                <p className="text-gray-300">{feature.description}</p>
+              </div>
+            </ScrollReveal>
           ))}
         </div>
       </section>
 
       {/* Stats Section */}
       <StatsSection />
+
+      {/* Testimonials Section */}
+      <TestimonialsSection />
 
       {/* Download Section */}
       <section id="download" className="container mx-auto px-6 py-20 text-center">
