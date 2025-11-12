@@ -1,11 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
   --primary: #FF5E5E;
-  --secondary: #FF8E3C;
-  --accent: #9C27B0;
+  --dark: #46484D;
 }
 
 body {
@@ -14,4 +15,5 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #46484D;
 }

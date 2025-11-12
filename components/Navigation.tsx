@@ -15,12 +15,12 @@ export default function Navigation() {
           <Image 
             src="/logo.png" 
             alt="Tuniverse Logo" 
-            width={40} 
-            height={40}
+            width={50} 
+            height={50}
             className="rounded-lg"
           />
-          <div className="text-2xl font-bold text-white">
-            <span className="text-primary">Tuni</span>verse
+          <div className="text-4xl font-bebas font-bold text-primary">
+            TUNIVERSE
           </div>
         </Link>
 

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900">
+    <main className="min-h-screen bg-dark">
       {/* Hero Section */}
       <section className="container mx-auto px-6 py-20">
         <div className="max-w-4xl mx-auto text-center">
@@ -157,7 +157,7 @@ export default function AboutPage() {
       {/* CTA Section */}
       <section className="container mx-auto px-6 py-20">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="bg-gradient-to-r from-primary/20 to-accent/20 backdrop-blur-lg rounded-3xl p-12 border border-white/20">
+          <div className="bg-gradient-to-r from-primary/20 to-primary/10 backdrop-blur-lg rounded-3xl p-12 border border-white/10">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
               Join the Music Revolution
             </h2>

@@ -32,7 +32,7 @@ export default function StatsSection() {
       ref={sectionRef}
       className="container mx-auto px-6 py-20"
     >
-      <div className="bg-gradient-to-r from-primary/20 to-accent/20 backdrop-blur-lg rounded-3xl p-12 border border-white/20">
+      <div className="bg-gradient-to-r from-primary/20 to-primary/10 backdrop-blur-lg rounded-3xl p-12 border border-white/10">
         <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-12">
           Join Our Growing Community
         </h2>

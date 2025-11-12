@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function FAQPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900">
+    <main className="min-h-screen bg-dark">
       <section className="container mx-auto px-6 py-20">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 text-center">
@@ -31,7 +31,7 @@ export default function FAQPage() {
           </div>
 
           {/* Contact CTA */}
-          <div className="mt-12 bg-gradient-to-r from-primary/20 to-accent/20 backdrop-blur-lg rounded-3xl p-8 border border-white/20 text-center">
+          <div className="mt-12 bg-gradient-to-r from-primary/20 to-primary/10 backdrop-blur-lg rounded-3xl p-8 border border-white/10 text-center">
             <h2 className="text-2xl font-bold text-white mb-4">
               Still have questions?
             </h2>

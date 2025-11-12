@@ -10,8 +10,10 @@ const config: Config = {
     extend: {
       colors: {
         primary: "#FF5E5E",
-        secondary: "#FF8E3C",
-        accent: "#9C27B0",
+        dark: "#46484D",
+      },
+      fontFamily: {
+        bebas: ['"Bebas Neue"', 'sans-serif'],
       },
     },
   },
