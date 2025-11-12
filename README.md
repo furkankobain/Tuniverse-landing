@@ -35,12 +35,21 @@ npm start
 
 ## 🎨 Features
 
-- ✅ Hero section with app showcase
-- ✅ Features overview
-- ✅ Download links (App Store / Google Play / Web)
-- ✅ Responsive design
-- ✅ SEO optimized
-- ✅ Fast performance
+### Pages
+- ✅ Home - Hero, Features, Download sections
+- ✅ About - Team and mission
+- ✅ FAQ - 16 common questions
+- ✅ Privacy Policy - GDPR/KVKK compliant
+- ✅ Terms of Service - Complete legal terms
+- ✅ Contact - Multiple support channels
+
+### Design
+- ✅ Responsive design (mobile/tablet/desktop)
+- ✅ Modern gradient backgrounds
+- ✅ Glassmorphism effects
+- ✅ SEO optimized metadata
+- ✅ Fast performance with Next.js 15
+- ✅ Social media integration
 
 ## 📁 Project Structure
 
