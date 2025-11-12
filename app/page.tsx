@@ -2,6 +2,9 @@ import Link from "next/link";
 import Navigation from "@/components/Navigation";
 import StatsSection from "@/components/StatsSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
+import PricingSection from "@/components/PricingSection";
+import ComparisonSection from "@/components/ComparisonSection";
+import NewsletterSection from "@/components/NewsletterSection";
 import ScrollReveal from "@/components/ScrollReveal";
 
 export default function Home() {
@@ -70,6 +73,15 @@ export default function Home() {
 
       {/* Testimonials Section */}
       <TestimonialsSection />
+
+      {/* Comparison Section */}
+      <ComparisonSection />
+
+      {/* Pricing Section */}
+      <PricingSection />
+
+      {/* Newsletter Section */}
+      <NewsletterSection />
 
       {/* Download Section */}
       <section id="download" className="container mx-auto px-6 py-20 text-center">
