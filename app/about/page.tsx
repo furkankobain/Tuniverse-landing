@@ -30,8 +30,6 @@ export default function AboutPage() {
               <p>
                 Tuniverse was born from a simple idea: music deserves its own social network. We wanted to create a space where music lovers can track, rate, and share their favorite songs and albums with a passionate community.
               </p>
-                we wanted to create the same experience for music lovers.
-              </p>
               <p>
                 We believe that music is more than just entertainment—it&apos;s a journey, a memory, 
                 an emotion. Every song tells a story, and every listener has a unique perspective. 
