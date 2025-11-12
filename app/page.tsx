@@ -5,6 +5,8 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import PricingSection from "@/components/PricingSection";
 import ComparisonSection from "@/components/ComparisonSection";
 import NewsletterSection from "@/components/NewsletterSection";
+import SocialProofSection from "@/components/SocialProofSection";
+import DetailedFeaturesSection from "@/components/DetailedFeaturesSection";
 import ScrollReveal from "@/components/ScrollReveal";
 
 export default function Home() {
@@ -20,7 +22,7 @@ export default function Home() {
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-12">
             Track, rate, and review your favorite songs and albums. <br />
-            The Letterboxd for music lovers.
+            The ultimate music social network.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
@@ -70,6 +72,12 @@ export default function Home() {
 
       {/* Stats Section */}
       <StatsSection />
+
+      {/* Social Proof Section */}
+      <SocialProofSection />
+
+      {/* Detailed Features Section */}
+      <DetailedFeaturesSection />
 
       {/* Testimonials Section */}
       <TestimonialsSection />

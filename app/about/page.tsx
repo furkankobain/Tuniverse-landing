@@ -28,8 +28,8 @@ export default function AboutPage() {
             <h2 className="text-3xl font-bold text-white mb-6">Our Story</h2>
             <div className="space-y-4 text-gray-300 text-lg leading-relaxed">
               <p>
-                Tuniverse was born from a simple idea: music deserves its own social network. 
-                Just like Letterboxd revolutionized how we track and share our favorite films, 
+                Tuniverse was born from a simple idea: music deserves its own social network. We wanted to create a space where music lovers can track, rate, and share their favorite songs and albums with a passionate community.
+              </p>
                 we wanted to create the same experience for music lovers.
               </p>
               <p>
