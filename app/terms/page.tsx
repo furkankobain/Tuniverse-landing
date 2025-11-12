@@ -15,14 +15,14 @@ export default function TermsPage() {
 
         <div className="space-y-10 max-w-4xl">
           <p>
-            Welcome to Tuniverse! By accessing or using our mobile and web applications ("Services"), you agree to these
-            Terms of Service ("Terms"). If you do not agree, please do not use the Services.
+            Welcome to Tuniverse! By accessing or using our mobile and web applications (&quot;Services&quot;), you agree to these
+            Terms of Service (&quot;Terms&quot;). If you do not agree, please do not use the Services.
           </p>
 
           <section>
             <h2 className="text-2xl font-semibold mb-3">1. Acceptance of Terms</h2>
             <p className="text-gray-300">
-              These Terms constitute a legally binding agreement between you and <strong>Tuniverse Inc. (Furkan Kaymak)</strong> ("we", "us", "our").
+              These Terms constitute a legally binding agreement between you and <strong>Tuniverse Inc. (Furkan Kaymak)</strong> (&quot;we&quot;, &quot;us&quot;, &quot;our&quot;).
               By creating an account or using the Services, you confirm that you are at least 13 years old (or older if required by
               local law) and have the authority to enter into this agreement.
             </p>
@@ -99,7 +99,7 @@ export default function TermsPage() {
           <section>
             <h2 className="text-2xl font-semibold mb-3">9. Disclaimer of Warranties</h2>
             <p className="text-gray-300">
-              THE SERVICES ARE PROVIDED "AS IS" WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED. WE DO NOT GUARANTEE
+              THE SERVICES ARE PROVIDED &quot;AS IS&quot; WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED. WE DO NOT GUARANTEE
               UNINTERRUPTED, ERROR-FREE, OR SECURE ACCESS.
             </p>
           </section>

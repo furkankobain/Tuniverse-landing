@@ -15,8 +15,8 @@ export default function PrivacyPage() {
 
         <div className="space-y-10 max-w-4xl">
           <p>
-            This Privacy Policy explains how <strong>Tuniverse Inc. (Furkan Kaymak)</strong> ("we", "us", or "our") collects, uses, and
-            protects your information when you use the Tuniverse mobile and web applications ("Services").
+            This Privacy Policy explains how <strong>Tuniverse Inc. (Furkan Kaymak)</strong> (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) collects, uses, and
+            protects your information when you use the Tuniverse mobile and web applications (&quot;Services&quot;).
           </p>
 
           <section>

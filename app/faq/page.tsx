@@ -36,7 +36,7 @@ export default function FAQPage() {
               Still have questions?
             </h2>
             <p className="text-gray-300 mb-6">
-              We're here to help! Reach out to our support team.
+              We&apos;re here to help! Reach out to our support team.
             </p>
             <Link 
               href="/contact"

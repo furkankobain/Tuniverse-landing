@@ -14,7 +14,7 @@ export default function ContactPage() {
             Get in Touch
           </h1>
           <p className="text-xl text-gray-300 mb-12 text-center">
-            Have questions, feedback, or need support? We'd love to hear from you!
+            Have questions, feedback, or need support? We&apos;d love to hear from you!
           </p>
 
           <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20">

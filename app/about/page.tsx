@@ -16,7 +16,7 @@ export default function AboutPage() {
             About Tuniverse
           </h1>
           <p className="text-xl text-gray-300 mb-12">
-            Your life in music. We're building the ultimate music social network.
+            Your life in music. We&apos;re building the ultimate music social network.
           </p>
         </div>
       </section>
@@ -33,12 +33,12 @@ export default function AboutPage() {
                 we wanted to create the same experience for music lovers.
               </p>
               <p>
-                We believe that music is more than just entertainment—it's a journey, a memory, 
+                We believe that music is more than just entertainment—it&apos;s a journey, a memory, 
                 an emotion. Every song tells a story, and every listener has a unique perspective. 
                 Tuniverse gives you the tools to capture, share, and discover those stories.
               </p>
               <p>
-                From rating your favorite albums to discovering new artists through your friends' 
+                From rating your favorite albums to discovering new artists through your friends&apos; 
                 recommendations, Tuniverse is designed to enhance how you experience music in the 
                 digital age.
               </p>
@@ -70,7 +70,7 @@ export default function AboutPage() {
               <div className="text-4xl mb-4">🔍</div>
               <h3 className="text-xl font-bold text-white mb-3">Discover More</h3>
               <p className="text-gray-300">
-                Get personalized recommendations and explore music beyond the algorithm's usual suggestions.
+                Get personalized recommendations and explore music beyond the algorithm&apos;s usual suggestions.
               </p>
             </div>
           </div>
@@ -88,7 +88,7 @@ export default function AboutPage() {
               <p className="text-gray-300 max-w-2xl mx-auto">
                 Passionate about music and technology, Furkan created Tuniverse to bring music lovers 
                 together in a meaningful way. With a background in software development and a love for 
-                discovering new music, he's dedicated to building the best music social network.
+                discovering new music, he&apos;s dedicated to building the best music social network.
               </p>
               <div className="flex justify-center gap-4 mt-6">
                 <a 
@@ -141,13 +141,13 @@ export default function AboutPage() {
             <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20">
               <h3 className="text-xl font-bold text-white mb-2">🔒 Privacy Matters</h3>
               <p className="text-gray-300">
-                Your data is yours. We're transparent about what we collect and never sell your information.
+                Your data is yours. We&apos;re transparent about what we collect and never sell your information.
               </p>
             </div>
             <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20">
               <h3 className="text-xl font-bold text-white mb-2">🚀 Continuous Innovation</h3>
               <p className="text-gray-300">
-                Music and technology evolve. We're committed to constantly improving and adding new features.
+                Music and technology evolve. We&apos;re committed to constantly improving and adding new features.
               </p>
             </div>
           </div>
