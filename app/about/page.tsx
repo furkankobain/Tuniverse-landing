@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-dark">
+    <main className="min-h-screen" style={{ backgroundColor: '#46484D' }}>
       {/* Hero Section */}
       <section className="container mx-auto px-6 py-20">
         <div className="max-w-4xl mx-auto text-center">
