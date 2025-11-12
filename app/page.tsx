@@ -14,8 +14,11 @@ export default function Home() {
             <Link href="#features" className="text-gray-300 hover:text-white transition">
               Features
             </Link>
-            <Link href="#about" className="text-gray-300 hover:text-white transition">
+            <Link href="/about" className="text-gray-300 hover:text-white transition">
               About
+            </Link>
+            <Link href="/faq" className="text-gray-300 hover:text-white transition">
+              FAQ
             </Link>
             <Link href="#download" className="text-gray-300 hover:text-white transition">
               Download
@@ -134,6 +137,12 @@ export default function Home() {
             <div className="flex flex-col gap-2">
               <Link href="#features" className="text-gray-400 hover:text-white transition">
                 Features
+              </Link>
+              <Link href="/about" className="text-gray-400 hover:text-white transition">
+                About
+              </Link>
+              <Link href="/faq" className="text-gray-400 hover:text-white transition">
+                FAQ
               </Link>
               <Link href="#download" className="text-gray-400 hover:text-white transition">
                 Download
