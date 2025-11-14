@@ -17,3 +17,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #46484D;
 }
+
+/* Hide scrollbar for screenshot carousel */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}

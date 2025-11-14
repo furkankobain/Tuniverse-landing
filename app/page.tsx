@@ -40,11 +40,21 @@ export default function Home() {
           </div>
         </div>
 
-        {/* App Preview - Placeholder */}
+        {/* App Screenshots */}
         <div className="mt-20 relative">
-          <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8 max-w-5xl mx-auto border border-white/20">
-            <div className="aspect-video bg-gradient-to-br from-primary/20 to-accent/20 rounded-xl flex items-center justify-center">
-              <p className="text-white text-2xl">App Screenshot Here</p>
+          <div className="max-w-6xl mx-auto">
+            <div className="flex overflow-x-auto gap-6 pb-8 snap-x snap-mandatory scrollbar-hide">
+              {screenshots.map((screenshot, index) => (
+                <div key={index} className="flex-shrink-0 snap-center">
+                  <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-4 border border-white/20 hover:border-primary/50 transition">
+                    <img 
+                      src={screenshot.src}
+                      alt={screenshot.alt}
+                      className="w-64 h-auto rounded-2xl shadow-2xl"
+                    />
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -189,6 +199,29 @@ export default function Home() {
     </main>
   );
 }
+
+const screenshots = [
+  {
+    src: "/screenshots/Screenshot_1763111263.png",
+    alt: "Tuniverse Home Screen - Discover Music"
+  },
+  {
+    src: "/screenshots/Screenshot_1763111290.png",
+    alt: "Tuniverse Discover Page"
+  },
+  {
+    src: "/screenshots/Screenshot_1763111309.png",
+    alt: "Artist Detail Page"
+  },
+  {
+    src: "/screenshots/Screenshot_1763111316.png",
+    alt: "Track Detail & Reviews"
+  },
+  {
+    src: "/screenshots/Screenshot_1763111328.png",
+    alt: "User Profile & Stats"
+  }
+];
 
 const features = [
   {

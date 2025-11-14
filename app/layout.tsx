@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   description: "Track, rate and review your favorite songs and albums in your music universe. The Letterboxd for music lovers.",
   keywords: ["music", "social network", "letterboxd for music", "music diary", "track music", "rate songs"],
   authors: [{ name: "Tuniverse Team" }],
+  icons: {
+    icon: '/favicon.png',
+  },
   openGraph: {
     title: "Tuniverse - Your Life in Music",
     description: "Track, rate and review your favorite songs and albums",
