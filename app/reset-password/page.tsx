@@ -1,9 +1,9 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { initializeApp } from 'firebase/app';
+import { initializeApp, getApps } from 'firebase/app';
 import { getAuth, confirmPasswordReset, verifyPasswordResetCode } from 'firebase/auth';
 
 // Firebase config
@@ -17,21 +17,27 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase (only if not already initialized)
-let app;
-let auth;
-try {
-  app = initializeApp(firebaseConfig);
-  auth = getAuth(app);
-} catch (error) {
-  // Firebase already initialized
-  const { getApps } = require('firebase/app');
-  if (getApps().length > 0) {
-    app = getApps()[0];
-    auth = getAuth(app);
+function initializeFirebase() {
+  if (typeof window === 'undefined') return null; // Server-side check
+  
+  try {
+    const apps = getApps();
+    let app;
+    if (apps.length > 0) {
+      // Firebase already initialized
+      app = apps[0];
+    } else {
+      // Initialize Firebase
+      app = initializeApp(firebaseConfig);
+    }
+    return getAuth(app);
+  } catch (error) {
+    console.error('Firebase initialization error:', error);
+    return null;
   }
 }
 
-export default function ResetPasswordPage() {
+function ResetPasswordContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const [oobCode, setOobCode] = useState<string | null>(null);
@@ -75,8 +81,15 @@ export default function ResetPasswordPage() {
   const verifyResetCode = async (code: string) => {
     setVerifying(true);
     try {
+      const firebaseAuth = initializeFirebase();
+      if (!firebaseAuth) {
+        setError('Firebase authentication is not available. Please refresh the page.');
+        setLoading(false);
+        return;
+      }
+      
       // Verify the password reset code and get the email
-      const verifiedEmail = await verifyPasswordResetCode(auth, code);
+      const verifiedEmail = await verifyPasswordResetCode(firebaseAuth, code);
       setEmail(verifiedEmail);
       setLoading(false);
     } catch (error: any) {
@@ -110,8 +123,15 @@ export default function ResetPasswordPage() {
 
     setResetting(true);
     try {
+      const firebaseAuth = initializeFirebase();
+      if (!firebaseAuth) {
+        setError('Firebase authentication is not available. Please refresh the page.');
+        setResetting(false);
+        return;
+      }
+      
       // Confirm password reset
-      await confirmPasswordReset(auth, oobCode, newPassword);
+      await confirmPasswordReset(firebaseAuth, oobCode, newPassword);
       setSuccess(true);
       
       // Redirect to login after 3 seconds
@@ -261,3 +281,17 @@ export default function ResetPasswordPage() {
   );
 }
 
+export default function ResetPasswordPage() {
+  return (
+    <Suspense fallback={
+      <main className="min-h-screen bg-gray-950 text-gray-100 flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto mb-4"></div>
+          <p className="text-gray-300">Loading...</p>
+        </div>
+      </main>
+    }>
+      <ResetPasswordContent />
+    </Suspense>
+  );
+}
