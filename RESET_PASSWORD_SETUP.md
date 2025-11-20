@@ -16,7 +16,7 @@
 
 ### 3. Email Service Güncellendi
 - **Dosya:** `lib/shared/services/email_service.dart`
-- Custom URL eklendi: `https://tuniverse.app/reset-password`
+- Custom URL eklendi: `https://tuniverseapp.com/reset-password`
 - Reset link artık bu sayfaya yönlendirecek
 
 ---
@@ -41,25 +41,25 @@ Bu komut `firebase` paketini yükleyecek.
 **Firebase Console** → **Authentication** → **Settings** → **Authorized domains**
 
 Şu domain'i ekle:
-- ✅ `tuniverse.app` (eğer yoksa)
+- ✅ `tuniverseapp.com` (eğer yoksa)
 
-**ÖNEMLİ:** Domain'in DNS'te `tuniverse.app` olarak yönlendirildiğinden emin ol.
+**ÖNEMLİ:** Domain'in DNS'te `tuniverseapp.com` olarak yönlendirildiğinden emin ol.
 
 ---
 
 ## 🌐 DNS Ayarları
 
-### Custom Domain (tuniverse.app)
+### Custom Domain (tuniverseapp.com)
 
-Eğer `tuniverse.app` custom domain ise:
+Eğer `tuniverseapp.com` custom domain ise:
 
 1. **DNS Provider'da** (Netlify/Türkticaret):
-   - `tuniverse.app` → Next.js app'e yönlendir
+   - `tuniverseapp.com` → Next.js app'e yönlendir
    - Ya da Firebase Hosting'e yönlendir (Next.js'i Firebase Hosting'e deploy ettiysen)
 
 2. **Firebase Hosting** (eğer kullanıyorsan):
    - Firebase Console → Hosting → Add custom domain
-   - `tuniverse.app` ekle
+   - `tuniverseapp.com` ekle
    - DNS kayıtlarını ekle
 
 ---
@@ -92,7 +92,7 @@ firebase deploy --only hosting
 ### 2. Reset Link'i Aç
 
 1. Email'deki reset link'ine tıkla
-2. `https://tuniverse.app/reset-password?oobCode=XXXXX&mode=resetPassword` açılmalı
+2. `https://tuniverseapp.com/reset-password?oobCode=XXXXX&mode=resetPassword` açılmalı
 3. Yeni şifre gir
 4. Şifreyi güncelle
 
@@ -107,7 +107,7 @@ firebase deploy --only hosting
 
 Reset password email'inde link şu formatta olacak:
 ```
-https://tuniverse.app/reset-password?oobCode=XXXXX&mode=resetPassword
+https://tuniverseapp.com/reset-password?oobCode=XXXXX&mode=resetPassword
 ```
 
 Sayfa bu parametreleri otomatik olarak handle edecek.
@@ -125,7 +125,7 @@ Sayfa bu parametreleri otomatik olarak handle edecek.
 
 **Çözüm:**
 1. Yeni reset email iste
-2. Firebase Console'da `tuniverse.app` domain'ini authorized domains listesine ekle
+2. Firebase Console'da `tuniverseapp.com` domain'ini authorized domains listesine ekle
 
 ### "Password too weak" Hatası
 
@@ -138,15 +138,15 @@ Sayfa bu parametreleri otomatik olarak handle edecek.
 **Kontrol Et:**
 1. ✅ Domain DNS'te doğru yönlendirilmiş mi?
 2. ✅ Next.js app deploy edilmiş mi?
-3. ✅ `tuniverse.app/reset-password` route'u çalışıyor mu?
+3. ✅ `tuniverseapp.com/reset-password` route'u çalışıyor mu?
 
 ---
 
 ## ✅ Checklist
 
 - [ ] `npm install` çalıştırıldı
-- [ ] Firebase Console'da `tuniverse.app` authorized domains listesinde
-- [ ] DNS ayarları doğru (`tuniverse.app` → Next.js app)
+- [ ] Firebase Console'da `tuniverseapp.com` authorized domains listesinde
+- [ ] DNS ayarları doğru (`tuniverseapp.com` → Next.js app)
 - [ ] Next.js app deploy edildi
 - [ ] Reset password email test edildi
 - [ ] Reset password sayfası çalışıyor
@@ -156,5 +156,5 @@ Sayfa bu parametreleri otomatik olarak handle edecek.
 
 ## 🎉 Tamamlandı!
 
-Reset password sayfası hazır! Kullanıcılar artık `tuniverse.app/reset-password` üzerinden şifrelerini sıfırlayabilir.
+Reset password sayfası hazır! Kullanıcılar artık `tuniverseapp.com/reset-password` üzerinden şifrelerini sıfırlayabilir.
 
